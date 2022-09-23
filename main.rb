@@ -22,7 +22,7 @@ end
 #main loop, call the function every time to check the number and push the new number if possible
 #Boucle principale, elle appellera notre fonction créée pour valider les combinaisons, si possible, ajoutera une nouvelle combinaison  
 for nb in 0..999 
-  temp = nb.to_s.rjust(3, "0")
+  temp = nb.to_s.rjust(3, "0") #start from 0, but need 3 chars, so start with 001 002 003....
   to_add = check_number(temp)  
   if to_add
     $data.push(temp)
